@@ -1,0 +1,14 @@
+prefix=/tmp/build/f245826f/ci-common/scripts/8293/.conan/data/libav/12.3/_/_/package/bfa70b1e06b0a0b31c0b9ad7fd595a9622ec3469
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavresample
+Description: Libav audio resampling library
+Version: 3.0.0
+Requires: 
+Requires.private: libavutil >= 55.20.0
+Conflicts:
+Libs: -L${libdir} -lavresample 
+Libs.private: -lm
+Cflags: -I${includedir}
